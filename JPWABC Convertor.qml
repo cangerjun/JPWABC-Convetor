@@ -204,7 +204,7 @@ MuseScore {
     property var flatNotes : ["1","b2","2","b3","3","4","b5","5","b6","6","b7","7"]
 
     function doTransform() {
-        var content = "// ************** JPW-ABC File Ver 1.0 (for JP-Word v5.30g) **************";
+        var content = "// ************** JPW-ABC File Ver 1.0 (for JP-Word v6.20f-v) **************";
 
         var cursor = curScore.newCursor();
         var endTick;
@@ -308,7 +308,7 @@ MuseScore {
                 if(cursor.element.barlineType==1){
                     noteText=" | ";
                 }else if(cursor.element.barlineType==2){
-                    noteText=" || ";
+                    noteText=" | ";
                 }else if(cursor.element.barlineType==4){
                     noteText=" |: ";
                 }else if(cursor.element.barlineType==8){
